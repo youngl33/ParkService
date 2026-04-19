@@ -1,0 +1,2326 @@
+{
+    "attAdventuresWinniePooh": {
+        "entityId": "attAdventuresWinniePooh",
+        "name": "小熊维尼历险记",
+        "englishName": "The Many Adventures of Winnie the Pooh",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-winnie-the-pooh-new-c_tcm1874-239130.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.15180406306",
+                    "longitude": "121.665299510689"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "惊险程度": "黑暗",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年",
+                "兴趣爱好": "乘客可轮换项目, 室内",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attAliceWonderlandMaze": {
+        "entityId": "attAliceWonderlandMaze",
+        "name": "爱丽丝梦游仙境迷宫",
+        "englishName": "Alice in Wonderland Maze",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-alice-new-b_tcm1874-239483.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1508361265792",
+                    "longitude": "121.66616207126300"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "室外",
+                "今日开放时间": "8:30 至 18:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attBecomeIronMan": {
+        "entityId": "attBecomeIronMan",
+        "name": "漫威英雄总部 – 变身钢铁侠",
+        "englishName": "Become Iron Man at the Marvel Universe",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-become-icon-man-hero_tcm1874-116347.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148647",
+                    "longitude": "121.665078"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 成人, 儿童",
+                "兴趣爱好": "室内, 互动项目, 与迪士尼朋友见面",
+                "今日开放时间": "9:30 至 20:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attBuzzLightyearPlanetRescue": {
+        "entityId": "attBuzzLightyearPlanetRescue",
+        "name": "巴斯光年星际营救",
+        "englishName": "Buzz Lightyear Planet Rescue",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-buzz-lightyear-new-c_tcm1874-239235.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1472793281538",
+                    "longitude": "121.664209226414"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "所有身高",
+                "惊险程度": "黑暗",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "室内, 互动项目, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attCampDiscovery": {
+        "entityId": "attCampDiscovery",
+        "name": "古迹探索营",
+        "englishName": "Camp Discovery",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-camp-discovery-hero-new_tcm1874-114795.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149761",
+                    "longitude": "121.670013"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "室外"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attChallengeTrails": {
+        "entityId": "attChallengeTrails",
+        "name": "古迹探索营的绳索挑战道",
+        "englishName": "Challenge Trails at Camp Discovery",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1874-239013.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149954",
+                    "longitude": "121.67043"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "106厘米或以上",
+                "惊险程度": "刺激",
+                "适合年龄": "8-13岁少年, 青少年, 儿童, 成人",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "因计划性维修暂时关闭查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attDumboFlyingElephant": {
+        "entityId": "attDumboFlyingElephant",
+        "name": "小飞象",
+        "englishName": "Dumbo the Flying Elephant",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-dumbo-flying-elephant-hero-new_tcm1874-114851.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148841563822",
+                    "longitude": "121.66635200217"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "游客身高": "所有身高",
+                "惊险程度": "旋转",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年",
+                "兴趣爱好": "乘客可轮换项目, 室外",
+                "今日开放时间": "8:30 至 18:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attEastZootopiaLandExit": {
+        "entityId": "attEastZootopiaLandExit",
+        "name": "疯狂动物城出口",
+        "englishName": "Zootopia Exit",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-east-zootopia-land-exit-hero_tcm1874-267015.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1519",
+                    "longitude": "121.665691"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "疯狂动物城",
+                "游客身高": "所有身高",
+                "适合年龄": "所有身高",
+                "兴趣爱好": "室外",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attEnchantedStorybookCastle": {
+        "entityId": "attEnchantedStorybookCastle",
+        "name": "奇幻童话城堡",
+        "englishName": "Enchanted Storybook Castle",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-enchanted-storybook-castle-hero-new_tcm1874-114800.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1500112466785",
+                    "longitude": "121.666110117446"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "室内"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attExplorerCanoes": {
+        "entityId": "attExplorerCanoes",
+        "name": "探险家独木舟",
+        "englishName": "Explorer Canoes",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-explorer-canoes-hero-new_tcm1874-114838.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149957188067",
+                    "longitude": "121.66853728375"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "游客身高": "所有身高",
+                "惊险程度": "水花四溅",
+                "适合年龄": "儿童, 青少年, 8-13岁少年, 成人",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "9:30 至 17:00"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attFantasiaCarousel": {
+        "entityId": "attFantasiaCarousel",
+        "name": "幻想曲旋转木马",
+        "englishName": "Fantasia Carousel",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-fantasia-carousel-b-new_tcm1874-239286.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148810096307",
+                    "longitude": "121.6678167632"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "游客身高": "所有身高",
+                "惊险程度": "旋转",
+                "适合年龄": "学龄前儿童, 8-13岁少年, 儿童",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 20:00"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attHunnyPotSpin": {
+        "entityId": "attHunnyPotSpin",
+        "name": "旋转疯蜜罐",
+        "englishName": "Hunny Pot Spin",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-hunny-pot-spin-new-b_tcm1874-239377.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1515364057724",
+                    "longitude": "121.665325633961"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "惊险程度": "旋转",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attJetPacks": {
+        "entityId": "attJetPacks",
+        "name": "喷气背包飞行器",
+        "englishName": "Jet Packs",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jet-packs-new-c_tcm1874-239064.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1477166285573",
+                    "longitude": "121.665124670006"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "112厘米或以上",
+                "惊险程度": "旋转",
+                "适合年龄": "所有年龄, 儿童, 学龄前儿童, 青少年, 8-13岁少年, 成人",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attJuniorExplorersCamp": {
+        "entityId": "attJuniorExplorersCamp",
+        "name": "小勇者营地",
+        "englishName": "Junior Explorers Camp",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-junior-explorers-camp-hero_tcm1874-280415.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14963",
+                    "longitude": "121.669866"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "所有身高",
+                "适合年龄": "学龄前儿童, 儿童",
+                "兴趣爱好": "室外",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attMarvelUniverse": {
+        "entityId": "attMarvelUniverse",
+        "name": "漫威英雄总部",
+        "englishName": "Marvel Universe",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-marvel-universe-hero-new_tcm1874-115153.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1485217753065",
+                    "longitude": "121.665393253818"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 成人, 儿童",
+                "兴趣爱好": "室内, 互动项目",
+                "今日开放时间": "9:30 至 20:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attOnceUponTimeAdventure": {
+        "entityId": "attOnceUponTimeAdventure",
+        "name": "漫游童话时光",
+        "englishName": "“Once Upon a Time” Adventure",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-once-upon-time-adventure-hero-new_tcm1874-115130.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1500204783301",
+                    "longitude": "121.665840487774"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "室内, 互动项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attPeterPansFlight": {
+        "entityId": "attPeterPansFlight",
+        "name": "小飞侠天空奇遇",
+        "englishName": "Peter Pan’s Flight",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-peter-pans-flight-new-e_tcm1874-239155.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149743473847",
+                    "longitude": "121.66435218477"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "81厘米或以上",
+                "惊险程度": "黑暗",
+                "适合年龄": "儿童, 8-13岁少年",
+                "兴趣爱好": "乘客可轮换项目, 室内",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attPiratesOfCaribbean": {
+        "entityId": "attPiratesOfCaribbean",
+        "name": "加勒比海盗——沉落宝藏之战",
+        "englishName": "Pirates of the Caribbean Battle for the Sunken Treasure",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1874-115031.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151571488436",
+                    "longitude": "121.668203035393"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "游客身高": "81厘米或以上",
+                "惊险程度": "小幅降落, 高音量, 黑暗, 刺激",
+                "适合年龄": "8-13岁少年, 青少年, 儿童, 成人",
+                "兴趣爱好": "室内, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attPixarAdventurousJourneyTomorrowland": {
+        "entityId": "attPixarAdventurousJourneyTomorrowland",
+        "name": "皮克斯奇旅",
+        "englishName": "Pixar Adventurous Journey",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-pixar-adventurous-journey-cover-hero_tcm1874-281323.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147109",
+                    "longitude": "121.663872"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "所有身高",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年, 青少年, 成人, 所有年龄",
+                "兴趣爱好": "互动项目, 室内",
+                "今日开放时间": "10:00 至 18:00"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attRexsRCRacer": {
+        "entityId": "attRexsRCRacer",
+        "name": "抱抱龙冲天赛车",
+        "englishName": "Rex’s Racer",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-rexs-racer-new-c_tcm1874-239337.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149449",
+                    "longitude": "121.663115"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼·皮克斯玩具总动员",
+                "游客身高": "120厘米或以上",
+                "惊险程度": "刺激",
+                "适合年龄": "儿童, 8-13岁少年, 成人, 青少年",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attRoaringRapids": {
+        "entityId": "attRoaringRapids",
+        "name": "雷鸣山漂流",
+        "englishName": "Roaring Rapids",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-roaring-new-d_tcm1874-239551.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149338141182",
+                    "longitude": "121.66960123557"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "107厘米或以上",
+                "惊险程度": "急速降落, 黑暗, 高音量, 水花四溅, 刺激",
+                "适合年龄": "儿童, 8-13岁少年, 青少年, 成人",
+                "兴趣爱好": "乘客可轮换项目, 室外",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attSevenDwarfsMineTrain": {
+        "entityId": "attSevenDwarfsMineTrain",
+        "name": "七个小矮人矿山车",
+        "englishName": "Seven Dwarfs Mine Train",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-seven-dwarfs-mine-train-hero-new_tcm1874-114854.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1512476666026",
+                    "longitude": "121.666250852651"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "97厘米或以上",
+                "惊险程度": "急速降落, 刺激",
+                "适合年龄": "儿童, 8-13岁少年, 青少年, 成人",
+                "兴趣爱好": "乘客可轮换项目, 室外, 单人排队区",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attShipwreckShore": {
+        "entityId": "attShipwreckShore",
+        "name": "船奇戏水滩",
+        "englishName": "Shipwreck Shore",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-shipwreck-shore-new-e_tcm1874-239533.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151282805966",
+                    "longitude": "121.6684308645"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "游客身高": "所有身高",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年",
+                "兴趣爱好": "室外, 互动项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attSirensRevenge": {
+        "entityId": "attSirensRevenge",
+        "name": "探秘海妖复仇号",
+        "englishName": "Siren's Revenge",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-sirens-revenge-hero-new_tcm1874-114858.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151371967495",
+                    "longitude": "121.66931519362"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "游客身高": "所有身高",
+                "适合年龄": "学龄前儿童, 8-13岁少年, 儿童",
+                "兴趣爱好": "室外, 互动项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attSlinkyDogSpin": {
+        "entityId": "attSlinkyDogSpin",
+        "name": "弹簧狗团团转",
+        "englishName": "Slinky Dog Spin",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-slinky-dog-spin-hero-v2_tcm1874-151650.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149322",
+                    "longitude": "121.66354"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼·皮克斯玩具总动员",
+                "游客身高": "所有身高",
+                "惊险程度": "旋转",
+                "适合年龄": "学龄前儿童, 儿童, 8-13岁少年, 所有年龄, 成人, 青少年",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attSoaringOverHorizon": {
+        "entityId": "attSoaringOverHorizon",
+        "name": "翱翔•飞越地平线",
+        "englishName": "Soaring Over the Horizon",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-soaring-hero-new_tcm1874-114877.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1502881607996",
+                    "longitude": "121.671500444517"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "102厘米或以上",
+                "适合年龄": "儿童, 8-13岁少年, 青少年, 成人",
+                "兴趣爱好": "乘客可轮换项目, 室内",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attStitchEncounter": {
+        "entityId": "attStitchEncounter",
+        "name": "太空对话史迪奇",
+        "englishName": "Space Chat With Stitch",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-stitch-encounter-hero_tcm1874-102757.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1475041344818",
+                    "longitude": "121.664748173462"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "互动项目, 室内",
+                "今日开放时间": "12:00 至 18:00"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attTronLightcyclePowerRun": {
+        "entityId": "attTronLightcyclePowerRun",
+        "name": "创极速光轮－雪佛兰呈献",
+        "englishName": "TRON Lightcycle Power Run – Presented by Chevrolet",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-tron-lightcycle-power-run-hero-new_tcm1874-114865.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1481776620923",
+                    "longitude": "121.663256644584"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "122厘米或以上",
+                "惊险程度": "刺激, 黑暗, 急速降落",
+                "适合年龄": "儿童, 8-13岁少年, 青少年, 成人",
+                "兴趣爱好": "室内, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attTronRealm": {
+        "entityId": "attTronRealm",
+        "name": "创界：雪佛兰数字挑战",
+        "englishName": "TRON Realm, Chevrolet Digital Challenge",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-tron-realm-new-b_tcm1874-238911.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147743",
+                    "longitude": "121.663286"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "游客身高": "所有身高",
+                "适合年龄": "儿童, 8-13岁少年, 青少年, 成人",
+                "兴趣爱好": "互动项目",
+                "今日开放时间": "10:00 至 20:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attVistaTrail": {
+        "entityId": "attVistaTrail",
+        "name": "古迹探索营的探索步行道",
+        "englishName": "Vista Trail at Camp Discovery",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-vista-trail-hero_tcm1874-116276.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150221",
+                    "longitude": "121.670633"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "游客身高": "所有身高",
+                "适合年龄": "8-13岁少年, 学龄前儿童, 所有年龄, 青少年, 儿童, 成人",
+                "兴趣爱好": "室外",
+                "今日开放时间": "因计划性维修暂时关闭查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attVoyageToCrystalGrotto": {
+        "entityId": "attVoyageToCrystalGrotto",
+        "name": "晶彩奇航",
+        "englishName": "Voyage to the Crystal Grotto",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-20210518-new_tcm1874-221703.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1497810898181",
+                    "longitude": "121.664973366207"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "游客身高": "所有身高",
+                "惊险程度": "缓速",
+                "适合年龄": "所有年龄, 8-13岁少年, 青少年, 学龄前儿童, 儿童, 成人",
+                "兴趣爱好": "乘客可轮换项目, 室外",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attWestZootopiaLandEntry": {
+        "entityId": "attWestZootopiaLandEntry",
+        "name": "疯狂动物城入口",
+        "englishName": "Zootopia Entrance ",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-west-zootopia-land-entry-hero_tcm1874-267002.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150971",
+                    "longitude": "121.667019"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "疯狂动物城",
+                "游客身高": "所有身高",
+                "适合年龄": "所有年龄",
+                "兴趣爱好": "室外"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attWoodysRoundUp": {
+        "entityId": "attWoodysRoundUp",
+        "name": "胡迪牛仔嘉年华",
+        "englishName": "Woody’s Roundup",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-woody-new-b_tcm1874-239513.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150164",
+                    "longitude": "121.663769"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼·皮克斯玩具总动员",
+                "游客身高": "81厘米或以上",
+                "惊险程度": "旋转",
+                "适合年龄": "儿童, 8-13岁少年, 成人, 青少年",
+                "兴趣爱好": "室外, 乘客可轮换项目",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "attZootopiaHotPursuit": {
+        "entityId": "attZootopiaHotPursuit",
+        "name": "疯狂动物城：热力追踪",
+        "englishName": "Zootopia: Hot Pursuit",
+        "category": "游乐项目",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1874-269561.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.152389",
+                    "longitude": "121.666285"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "疯狂动物城",
+                "游客身高": "81厘米或以上",
+                "惊险程度": "黑暗, 小幅降落",
+                "适合年龄": "儿童, 8-13岁少年, 成人, 青少年",
+                "兴趣爱好": "乘客可轮换项目, 室内, 单人排队区",
+                "今日开放时间": "8:30 至 21:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCatchAGlimpseOfKevinBird": {
+        "entityId": "charCatchAGlimpseOfKevinBird",
+        "name": "偶遇凯文",
+        "englishName": "Catch a Glimpse of Kevin",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-catch-a-glimpse-of-kevin-bird-hero_tcm1874-219448.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150375",
+                    "longitude": "121.670121",
+                    "name": "Catch a Glimpse of Kevin"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 室外娱乐",
+                "今日开放时间": "10:00 至 16:10"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersDisneyPrincessesStorybookCourt": {
+        "entityId": "charCharactersDisneyPrincessesStorybookCourt",
+        "name": "奇幻童话城堡见面会 - 与迪士尼王室见面",
+        "englishName": "Meet Disney Royalty at Enchanted Storybook Castle",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-hero-20250227_tcm1874-277384.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14982587296053",
+                    "longitude": "121.66571224616177",
+                    "name": "奇幻童话城堡见面会 - 与迪士尼王室见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演类别": "现场娱乐演出, 与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "迪士尼公主, 经典角色, 室内娱乐",
+                "今日开放时间": "8:30 至 18:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersHeroicEncounterAtTheMarvelUniverse": {
+        "entityId": "charCharactersHeroicEncounterAtTheMarvelUniverse",
+        "name": "漫威英雄总部见面会 - 与复仇者联盟见面",
+        "englishName": "Heroic Encounter at the Marvel Universe",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-hero-20231108_tcm1874-267306.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148641",
+                    "longitude": "121.665204",
+                    "name": "漫威英雄总部见面会 - 与复仇者联盟见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "漫威",
+                "今日开放时间": "10:00 至 16:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersJackSparrowTreasureCove": {
+        "entityId": "charCharactersJackSparrowTreasureCove",
+        "name": "史派罗秘密基地见面会 - 与杰克船长见面",
+        "englishName": "Meet Jack Sparrow at the Sparrow’s Nest",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151256",
+                    "longitude": "121.66907",
+                    "name": "在史派罗秘密基地与杰克船长见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersJungleFriendsHappyCircle": {
+        "entityId": "charCharactersJungleFriendsHappyCircle",
+        "name": "欢笑聚友会见面会 - 与丛林里的迪士尼朋友见面",
+        "englishName": "Meet Disney Jungle Characters at Happy Circle",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jungle-new-a_tcm1874-240059.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150471",
+                    "longitude": "121.670576",
+                    "name": "欢笑聚友会见面会 - 与丛林里的迪士尼朋友见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演类别": "与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "11:15 至 17:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMarvelUniverseSpiderMan": {
+        "entityId": "charCharactersMarvelUniverseSpiderMan",
+        "name": "漫威英雄总部见面会 - 与蜘蛛侠见面",
+        "englishName": "Meet Spider-Man at the Marvel Universe",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-marvel-universe-hero-new-spidarman_tcm1874-210460.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148678",
+                    "longitude": "121.66524",
+                    "name": "漫威英雄总部见面会 - 与蜘蛛侠见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室内娱乐, 漫威",
+                "今日开放时间": "10:00 至 16:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetChipAndDale": {
+        "entityId": "charCharactersMeetChipAndDale",
+        "name": "奇奇蒂蒂淘淘铺 – 与奇奇蒂蒂见面",
+        "englishName": "Meet Chip & Dale at Chip & Dale’s Trading Post",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-chip-and-dale-hero-20231108_tcm1874-267312.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149646",
+                    "longitude": "121.669749",
+                    "name": "奇奇蒂蒂淘淘铺 – 与奇奇蒂蒂见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演类别": "与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 8-13岁少年, 成人, 儿童, 学龄前儿童, 青少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "10:00 至 16:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetDonaldFriendsatFantasyland": {
+        "entityId": "charCharactersMeetDonaldFriendsatFantasyland",
+        "name": "梦幻世界见面会 - 与唐老鸭和朋友们见面",
+        "englishName": "Meet Donald & Friends at Fantasyland",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-donald-friends-at-fantasyland-hero-0318_tcm1874-288790.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149477214861204",
+                    "longitude": "121.66473867373305",
+                    "name": "梦幻世界见面会 - 与唐老鸭和朋友们见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 室外娱乐",
+                "今日开放时间": "8:30 至 14:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetGoofy": {
+        "entityId": "charCharactersMeetGoofy",
+        "name": "米奇大街见面会 - 与高飞和朋友们见面",
+        "englishName": "Meet Goofy and Friends at Mickey Avenue",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-goofy-friends-hero-20260318_tcm1874-288788.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147790335613706",
+                    "longitude": "121.66810196948457",
+                    "name": "米奇大街见面会 - 与高飞和朋友们见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "米奇大街",
+                "表演类别": "与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色",
+                "今日开放时间": "8:30 至 14:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetJudyNickAtZootopiaPoliceDepartmentRecruitmentCenter": {
+        "entityId": "charCharactersMeetJudyNickAtZootopiaPoliceDepartmentRecruitmentCenter",
+        "name": "动物城警局招募中心 - 与朱迪和尼克见面",
+        "englishName": "Meet Judy & Nick at Zootopia Police Department Recruitment Center",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-hero-20231220-gallery02-characters-meet-Judy-nick-at-zootopia-police-department-recruitment-center_tcm1874-269525.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.152509",
+                    "longitude": "121.665855",
+                    "name": "动物城警局招募中心 - 与朱迪和尼克见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "疯狂动物城",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "8:30 至 19:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetMinnieFriendsatFantasyland": {
+        "entityId": "charCharactersMeetMinnieFriendsatFantasyland",
+        "name": "梦幻世界见面会 - 与米妮和朋友们见面",
+        "englishName": "Meet Minnie & Friends at Fantasyland",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-minnie-friends-at-fantasyland-16x9_tcm1874-288501.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150189465705225",
+                    "longitude": "121.66432999712272",
+                    "name": "梦幻世界见面会 - 与米妮和朋友们见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 米奇和朋友们, 室外娱乐",
+                "今日开放时间": "8:30 至 14:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetPixarCharactersAtTomorrowland": {
+        "entityId": "charCharactersMeetPixarCharactersAtTomorrowland",
+        "name": "明日世界见面会 - 和皮克斯朋友们见面 ",
+        "englishName": "Meet Pixar Characters at Tomorrowland",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pixar-characters-at-tomorrowland-hero-20240527_tcm1874-271516.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147577",
+                    "longitude": "121.663983",
+                    "name": "明日世界见面会 - 和皮克斯朋友们见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐, 皮克斯伙伴",
+                "今日开放时间": "11:00 至 17:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetPooh": {
+        "entityId": "charCharactersMeetPooh",
+        "name": "百亩森林见面会",
+        "englishName": "Meet a friend from the Hundred Acre Wood",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pooh-hero-new_tcm1874-211332.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151772",
+                    "longitude": "121.665496",
+                    "name": "百亩森林见面会"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "9:00 至 15:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetTheFriendsFromLiloStitchAtGalaxyGathering": {
+        "entityId": "charCharactersMeetTheFriendsFromLiloStitchAtGalaxyGathering",
+        "name": "太空传送门见面会 - 与《星际宝贝》中的朋友见面",
+        "englishName": "Meet the Friends from Lilo & Stitch at Galaxy Gathering",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-stich-and-lilo-hero-20240618_tcm1874-272227.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147642",
+                    "longitude": "121.66455",
+                    "name": "太空传送门见面会 - 与《星际宝贝》中的朋友见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "11:00 至 17:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMeetingPost": {
+        "entityId": "charCharactersMeetingPost",
+        "name": "友情驿站见面会 - 与您喜爱的玩具朋友见面",
+        "englishName": "Meet your Favorite Toys at The Meeting Post",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meeting-post-hero-20230524_tcm1874-259032.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149863",
+                    "longitude": "121.663414",
+                    "name": "友情驿站见面会 - 与您喜爱的玩具朋友见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼·皮克斯玩具总动员",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "11:00 至 17:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersMickeyMouseGardensImagination": {
+        "entityId": "charCharactersMickeyMouseGardensImagination",
+        "name": "奇想花园见面会 - 与米奇见面",
+        "englishName": "Meet Mickey at the Gardens of Imagination",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-mickey-mouse-new-hero_tcm1874-210462.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148619784589",
+                    "longitude": "121.66585522162",
+                    "name": "在奇想花园与米奇见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "现场娱乐演出, 与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 米奇和朋友们",
+                "今日开放时间": "9:00 至 20:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charCharactersSelfieSpotDuffy": {
+        "entityId": "charCharactersSelfieSpotDuffy",
+        "name": "米奇大街见面会 - 与达菲和朋友们见面",
+        "englishName": "Meet Duffy and Friends at Mickey Avenue",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-duffy-friends-glimmer-hero-0318_tcm1874-288789.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147967493059856",
+                    "longitude": "121.66841237284714",
+                    "name": "米奇大街见面会 – 与达菲和朋友们见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "米奇大街",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 室外娱乐",
+                "今日开放时间": "8:30 至 14:45"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charMeetTheCharacterFromUPAtHappyCircle": {
+        "entityId": "charMeetTheCharacterFromUPAtHappyCircle",
+        "name": "欢笑聚友会见面会 - 与《飞屋环游记》中的朋友见面",
+        "englishName": "Meet the Character from UP at Happy Circle",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jungle-characters-at-happy-circle-hero-20250603_tcm1874-279834.jpeg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.15056",
+                    "longitude": "121.670623",
+                    "name": "欢笑聚友会见面会 - 与《飞屋环游记》中的朋友见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演类别": "与迪士尼朋友见面",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "11:00 至 17:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "charSelfieSpotLinaBell": {
+        "entityId": "charSelfieSpotLinaBell",
+        "name": "萌友小站见面会 - 与玲娜贝儿见面",
+        "englishName": "Meet LinaBell at Friendship Point",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/glimmer-selfie-spot-linabell-hero-update_tcm1874-288787.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149496",
+                    "longitude": "121.668854",
+                    "name": "萌友小站见面会 - 与玲娜贝儿见面"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 室外娱乐",
+                "今日开放时间": "8:30 至 19:15"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entAPiratesLifeForYou": {
+        "entityId": "entAPiratesLifeForYou",
+        "name": "海盗大人生",
+        "englishName": "A Pirate’s Life for You!",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-a-pirates-life-for-you-hero_tcm1874-155886.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151252",
+                    "longitude": "121.669568",
+                    "name": "海盗大人生"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演约长达": "20分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "当日停止运营查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": "14:05&15:25"
+    },
+    "entASpecialCelebrationintheHundredAcreWood": {
+        "entityId": "entASpecialCelebrationintheHundredAcreWood",
+        "name": "百亩森林里的欢庆会",
+        "englishName": "A Special Celebration in the Hundred Acre Wood",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-hero-202400809-gallery1_tcm1874-272637.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151192706994713",
+                    "longitude": "121.66487452568829",
+                    "name": "百亩森林里的欢庆会"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "当日停止运营查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entAdventureIsleExplorerBand": {
+        "entityId": "entAdventureIsleExplorerBand",
+        "name": "迪士尼探索家乐团",
+        "englishName": "The Disney Explorer Band",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-adventure-isle-explorer-band-hero-20240621_tcm1874-272265.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.150012",
+                    "longitude": "121.66961",
+                    "name": "迪士尼探索家乐团"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "探险岛",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "当日停止运营查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entAvengersPatrol": {
+        "entityId": "entAvengersPatrol",
+        "name": "复仇者联盟巡逻",
+        "englishName": "Avengers’ Patrol",
+        "category": "迪士尼朋友",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-avengers-special-mission-hero-20230506_tcm1874-258647.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148079",
+                    "longitude": "121.663892",
+                    "name": "复仇者联盟巡逻"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "现场娱乐演出, 与迪士尼朋友见面",
+                "适合年龄": "成人, 所有年龄, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐, 漫威"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entAvengersTrainingInitiative": {
+        "entityId": "entAvengersTrainingInitiative",
+        "name": "复仇者联盟培训行动",
+        "englishName": "Avengers Training Initiative",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-avengers-training-initiative-hero-v2_tcm1874-194461.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148164048394",
+                    "longitude": "121.66374265171",
+                    "name": "复仇者联盟培训行动"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出, 舞台表演, 与迪士尼朋友见面",
+                "适合年龄": "成人, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐, 漫威"
+            }
+        },
+        "scheduleTimeInfo": "11:35&13:50&15:05&17:00"
+    },
+    "entBaiLingStorytelling": {
+        "entityId": "entBaiLingStorytelling",
+        "name": "梦幻故事会",
+        "englishName": "Fantasy Storytelling",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151161",
+                    "longitude": "121.664936",
+                    "name": "梦幻故事会"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演约长达": "20分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entClubDestinE": {
+        "entityId": "entClubDestinE",
+        "name": "E空间聚乐部",
+        "englishName": "Club Destin-E",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148215",
+                    "longitude": "121.663861",
+                    "name": "E空间聚乐部"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "18:45"
+    },
+    "entDisneyXiaoTuiTheMagicalRecycleBin": {
+        "entityId": "entDisneyXiaoTuiTheMagicalRecycleBin",
+        "name": "迪士尼小推：神奇回收箱",
+        "englishName": "Disney Xiaotui: The Magical Recycle Bin",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-xiaotui-the-magical-recycle-bin-hero-20240924_tcm1874-273352.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147703",
+                    "longitude": "121.664144",
+                    "name": "迪士尼小推：神奇回收箱"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entDisneyZootopiaComesAlive": {
+        "entityId": "entDisneyZootopiaComesAlive",
+        "name": "迪士尼疯狂动物城生活秀",
+        "englishName": "Disney Zootopia Comes Alive",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-zootopia-comes-alive-hero-2023121202_tcm1874-269144.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.152277",
+                    "longitude": "121.666102",
+                    "name": "迪士尼疯狂动物城生活秀"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "疯狂动物城",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "8-13岁少年, 青少年, 成人, 所有年龄, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entDisneytownMagicGleeClub": {
+        "entityId": "entDisneytownMagicGleeClub",
+        "name": "奇妙欢唱团",
+        "englishName": "Magic Glee Club",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disneytown-magic-glee-club-16-9-20250226_tcm1874-277315.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.145899",
+                    "longitude": "121.668599",
+                    "name": "奇妙欢唱团"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼小镇",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "14:30 至 17:25"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entEyeOfStormCaptainJacksSpectacular": {
+        "entityId": "entEyeOfStormCaptainJacksSpectacular",
+        "name": "风暴来临：杰克船长之惊天特技大冒险",
+        "englishName": "Eye of the Storm: Captain Jack’s Stunt Spectacular",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151213988467",
+                    "longitude": "121.66981800564",
+                    "name": "风暴来临——杰克船长之惊天特技大冒险"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演约长达": "30分钟",
+                "表演类别": "现场娱乐演出, 舞台表演, 剧场表演",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室内娱乐"
+            }
+        },
+        "scheduleTimeInfo": "10:30&11:10&11:50&13:00&13:40&14:20&16:30&17:10"
+    },
+    "entFantasyFestival": {
+        "entityId": "entFantasyFestival",
+        "name": "梦幻节",
+        "englishName": "Fantasy Festival",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-fantasy-festival-hero_tcm1874-174134.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151088 ",
+                    "longitude": "121.665177",
+                    "name": "梦幻节"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entFriendshipDuffyandFriendsSpecialPreParade": {
+        "entityId": "entFriendshipDuffyandFriendsSpecialPreParade",
+        "name": "“友谊号”：达菲和朋友们的特别巡游",
+        "englishName": "FriendSHIP! Duffy and Friends’ Special Pre-Parade",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-16x9_tcm1874-288230.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148194334335425",
+                    "longitude": "121.66473602935343",
+                    "name": "“友谊号”：达菲和朋友们的特别巡游"
+                }
+            ],
+            "vantagePoints": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14789443432045",
+                    "longitude": "121.66677336770746",
+                    "name": "迪士尼小镇观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14972841418034",
+                    "longitude": "121.66752227226907",
+                    "name": "漫月食府观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148700006827962",
+                    "longitude": "121.66421196700058",
+                    "name": "明日世界观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148563133068915",
+                    "longitude": "121.6680019208183",
+                    "name": "幻想曲旋转木马观赏点"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "巡游, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entFrozenSingAlongCelebration": {
+        "entityId": "entFrozenSingAlongCelebration",
+        "name": "冰雪奇缘：欢唱盛会",
+        "englishName": "Frozen: A Sing-Along Celebration",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-frozen-sing-along-celebration-hero-formal-v1_tcm1874-198172.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1508992623575",
+                    "longitude": "121.664163662141",
+                    "name": "冰雪奇缘：欢唱盛会"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演约长达": "20分钟",
+                "表演类别": "现场娱乐演出, 舞台表演, 剧场表演",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室内娱乐"
+            }
+        },
+        "scheduleTimeInfo": "11:30&13:15&14:00&14:45&16:30&17:15"
+    },
+    "entIgniteDreamNighttimeSpectacular": {
+        "entityId": "entIgniteDreamNighttimeSpectacular",
+        "name": "奇梦之光幻影秀",
+        "englishName": "ILLUMINATE! A Nighttime Celebration",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+        "coordinates": {
+            "dpaPoints": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148820",
+                    "longitude": "121.665958",
+                    "name": "奇梦之光幻影秀"
+                }
+            ],
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149282448931",
+                    "longitude": "121.66655874341",
+                    "name": "奇梦之光幻影秀"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "现场娱乐演出, 夜间娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "21:15"
+    },
+    "entMagicTogether": {
+        "entityId": "entMagicTogether",
+        "name": "奇妙在身边：10岁生日特别欢庆",
+        "englishName": "Magic Together: A Special 10th Birthday Celebration ",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-magic-together-hero_tcm1874-287954.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149368",
+                    "longitude": "121.666623",
+                    "name": "奇妙在身边：10岁生日特别欢庆"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "现场娱乐演出, 夜间娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "21:30"
+    },
+    "entMickeyFriendsTravelAroundChina": {
+        "entityId": "entMickeyFriendsTravelAroundChina",
+        "name": "米奇和朋友们游中国",
+        "englishName": "Mickey & Friends Travel Around China",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-friends-travel-around-china-hero-20240909_tcm1874-272827.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.146128",
+                    "longitude": "121.669062",
+                    "name": "米奇和朋友们游中国"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼小镇",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "17:55 至 19:40"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entMickeyStorybookAdventure": {
+        "entityId": "entMickeyStorybookAdventure",
+        "name": "米奇妙游童话书",
+        "englishName": "Mickey’s Storybook Adventure",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-adventure-hero-v2_tcm1874-223146.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14781",
+                    "longitude": "121.66725",
+                    "name": "米奇妙游童话书"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "米奇大街",
+                "表演约长达": "28分钟",
+                "表演类别": "现场娱乐演出, 与迪士尼朋友见面, 剧场表演",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 迪士尼公主, 米奇和朋友们, 室内娱乐"
+            }
+        },
+        "scheduleTimeInfo": "10:40&11:40&12:45&13:50&15:05&16:10&17:15"
+    },
+    "entMickeysStorybookExpress": {
+        "entityId": "entMickeysStorybookExpress",
+        "name": "米奇童话专列",
+        "englishName": "Mickey’s Storybook Express",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-storybook-20260317-16x9_tcm1874-288718.png",
+        "coordinates": {
+            "dpaPoints": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148149",
+                    "longitude": "121.66474",
+                    "name": "米奇童话专列"
+                }
+            ],
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149169298614186",
+                    "longitude": "121.66351950733016",
+                    "name": "米奇童话专列"
+                }
+            ],
+            "vantagePoints": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.147882161143652",
+                    "longitude": "121.66671450818764",
+                    "name": "迪士尼小镇观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149690617146113",
+                    "longitude": "121.66764702154114",
+                    "name": "漫月食府观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148737438073088",
+                    "longitude": "121.664147016229",
+                    "name": "明日世界观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14863305118585",
+                    "longitude": "121.6678850480465",
+                    "name": "幻想曲旋转木马观赏点"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演约长达": "14分钟",
+                "表演类别": "巡游, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 皮克斯伙伴, 米奇和朋友们, 室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "12:15&15:45"
+    },
+    "entPiratesRoaming": {
+        "entityId": "entPiratesRoaming",
+        "name": "海盗氛围",
+        "englishName": "Pirates Roaming",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-pirates-roaming-hero_tcm1874-174106.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151433484024086",
+                    "longitude": "121.6693382223868",
+                    "name": "海盗氛围"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entShanghaiDisneylandBand": {
+        "entityId": "entShanghaiDisneylandBand",
+        "name": "上海迪士尼乐团",
+        "englishName": "Shanghai Disneyland Band",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-hero-new_tcm1874-115046.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.1477287211652",
+                    "longitude": "121.668346972004",
+                    "name": "上海迪士尼乐团"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "米奇大街",
+                "表演约长达": "20分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "当日停止运营查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entShanghaiDisneylandHotelLobbyPianist": {
+        "entityId": "entShanghaiDisneylandHotelLobbyPianist",
+        "name": "上海迪士尼酒店钢琴师",
+        "englishName": "Shanghai Disneyland Hotel Lobby Pianist",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-hotel-lobby-pianist-hero_tcm1874-174113.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.141904",
+                    "longitude": "121.672552",
+                    "name": "上海迪士尼酒店钢琴师"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "上海迪士尼乐园酒店",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室内娱乐",
+                "今日开放时间": "14:30 至 19:30"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entStarSquadSpecialMoment": {
+        "entityId": "entStarSquadSpecialMoment",
+        "name": "“奇妙有你”欢庆团：庆祝上海迪士尼度假区10岁生日庆典特别呈现",
+        "englishName": "Star Squad Special Moment",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-star-squad-special-moment-hero_tcm1874-288165.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.14921480261824",
+                    "longitude": "121.66364841645698",
+                    "name": "“奇妙有你”欢庆团：庆祝上海迪士尼度假区10岁生日庆典特别呈现"
+                }
+            ],
+            "vantagePoints": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148185709035324",
+                    "longitude": "121.66785738000999",
+                    "name": "幻想曲旋转木马观赏点"
+                },
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148194334335425",
+                    "longitude": "121.66473602935343",
+                    "name": "明日世界观赏点"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "巡游, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "11:50&15:20"
+    },
+    "entStarWarsGalacticEncounterwithBDXDroids": {
+        "entityId": "entStarWarsGalacticEncounterwithBDXDroids",
+        "name": "星球大战：BDX机器人星际奇遇",
+        "englishName": "Star Wars: Galactic Encounter with BDX Droids",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-star-wars-galactic-encounter-with-bdx-droids-hero_tcm1874-287048.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148004293715463",
+                    "longitude": "121.66383995902315",
+                    "name": "星球大战：BDX机器人星际奇遇"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出, 舞台表演, 与迪士尼朋友见面",
+                "适合年龄": "成人, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "11:00&13:15&14:35&16:25"
+    },
+    "entSwabbieFight": {
+        "entityId": "entSwabbieFight",
+        "name": "水手打斗",
+        "englishName": "Swabbie Fight",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-swabbie-fight-hero_tcm1874-174228.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151249",
+                    "longitude": "121.669532",
+                    "name": "水手打斗"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演约长达": "5分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "13:45&14:55&16:05"
+    },
+    "entTaiChiWithCharacter": {
+        "entityId": "entTaiChiWithCharacter",
+        "name": "唐式太极",
+        "englishName": "Tai Chi with Character",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-tai-chi-with-character-hero-20220620_tcm1874-239953.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148163",
+                    "longitude": "121.666862",
+                    "name": "唐式太极"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "13:55"
+    },
+    "entTheHeartOfMagic": {
+        "entityId": "entTheHeartOfMagic",
+        "name": "“奇妙之心”城堡秀",
+        "englishName": "The Heart of Magic",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/the-heart-of-magic-16-9_tcm1874-288132.png",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149319366083",
+                    "longitude": "121.66647901951",
+                    "name": "“奇妙之心”城堡秀"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "奇想花园",
+                "表演类别": "舞台表演, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "经典角色, 迪士尼公主, 室外娱乐, 米奇和朋友们"
+            }
+        },
+        "scheduleTimeInfo": "11:20&13:05&14:30&16:35"
+    },
+    "entTheJAMMitors": {
+        "entityId": "entTheJAMMitors",
+        "name": "分类回收杂物打",
+        "englishName": "The JAMMitors",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-the-jammitors-0225-hero_tcm1874-234881.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.148202033275",
+                    "longitude": "121.66501301806",
+                    "name": "分类回收杂物打"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "明日世界",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "10:05 至 16:25"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entToySoldiersBucketOFun": {
+        "entityId": "entToySoldiersBucketOFun",
+        "name": "绿色奇兵:欢乐玩具桶",
+        "englishName": "Toy Soldiers Bucket O' Fun",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-characters-toy-soldiers-bucket-o-fun-hero-20230529_tcm1874-259241.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.149214",
+                    "longitude": "121.663432",
+                    "name": "绿色奇兵:欢乐玩具桶"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "迪士尼·皮克斯玩具总动员",
+                "表演类别": "与迪士尼朋友见面, 现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 儿童, 学龄前儿童, 青少年, 8-13岁少年",
+                "兴趣爱好": "室外娱乐, 皮克斯伙伴"
+            }
+        },
+        "scheduleTimeInfo": null
+    },
+    "entTravelingTroubadours": {
+        "entityId": "entTravelingTroubadours",
+        "name": "吟游剧团",
+        "englishName": "Traveling Troubadours",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-hero_tcm1874-174268.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.15104",
+                    "longitude": "121.665193",
+                    "name": "吟游剧团"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "梦幻世界",
+                "表演约长达": "15分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐"
+            }
+        },
+        "scheduleTimeInfo": "12:00&14:30&16:15"
+    },
+    "entVoodooAlleyFight": {
+        "entityId": "entVoodooAlleyFight",
+        "name": "巫毒巷打斗",
+        "englishName": "Voodoo Alley Fight",
+        "category": "娱乐演出",
+        "imgUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-voodoo-alley-fight-hero_tcm1874-174289.jpg",
+        "coordinates": {
+            "primaryLocations": [
+                {
+                    "keyCoordinates": "Guest Entrance",
+                    "latitude": "31.151556",
+                    "longitude": "121.668682",
+                    "name": "巫毒巷打斗"
+                }
+            ]
+        },
+        "detail": {
+            "condition": {
+                "位置": "宝藏湾",
+                "表演约长达": "5分钟",
+                "表演类别": "现场娱乐演出",
+                "适合年龄": "所有年龄, 成人, 青少年, 8-13岁少年, 儿童, 学龄前儿童",
+                "兴趣爱好": "室外娱乐",
+                "今日开放时间": "当日停止运营查看更多日期"
+            }
+        },
+        "scheduleTimeInfo": null
+    }
+}
