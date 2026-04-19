@@ -36,3 +36,5 @@ themepark:
     url-template: https://api.themeparks.wiki/v1/entity/%s/live
     entity-ids:
       - 6e1464ca-1e9b-49c3-8937-c5c6f6675057
+  poi:
+    image-url-prefix: ${THEMEPARK_POI_IMAGE_URL_PREFIX:}

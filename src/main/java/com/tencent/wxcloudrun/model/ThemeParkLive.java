@@ -56,6 +56,9 @@ public class ThemeParkLive implements Serializable {
   @Column(name = "fetched_at", nullable = false)
   private LocalDateTime fetchedAt;
 
+  @Column(name = "yymmddhh", length = 8)
+  private String yymmddhh;
+
   @Column(name = "created_at", insertable = false, updatable = false)
   private LocalDateTime createdAt;
 

@@ -1,173 +1,363 @@
-# wxcloudrun-springboot
-[![GitHub license](https://img.shields.io/github/license/WeixinCloud/wxcloudrun-express)](https://github.com/WeixinCloud/wxcloudrun-express)
-![GitHub package.json dependency version (prod)](https://img.shields.io/badge/maven-3.6.0-green)
-![GitHub package.json dependency version (prod)](https://img.shields.io/badge/jdk-11-green)
+# ParkService
 
-微信云托管 Java Springboot 框架模版，实现简单的计数器读写接口，使用云托管 MySQL 读写、记录计数值。
+基于 Spring Boot 2.5.5 的后端服务，当前主要提供两类能力：
 
-![](https://qcloudimg.tencent-cloud.cn/raw/be22992d297d1b9a1a5365e606276781.png)
+1. 模板遗留的计数器接口
+2. 主题乐园实时数据抓取、落库与查询接口
 
+当前主题乐园部分默认接入 `themeparks.wiki` 的实时数据接口，已配置的默认园区为上海迪士尼度假区。
 
-## 快速开始
-前往 [微信云托管快速开始页面](https://developers.weixin.qq.com/miniprogram/dev/wxcloudrun/src/basic/guide.html)，选择相应语言的模板，根据引导完成部署。
+## 技术栈
 
-## 本地调试
-下载代码在本地调试，请参考[微信云托管本地调试指南](https://developers.weixin.qq.com/miniprogram/dev/wxcloudrun/src/guide/debug/)。
+- Java 8
+- Spring Boot 2.5.5
+- Spring Web
+- Spring Data JPA
+- Spring Scheduling
+- MySQL 8
+- Docker Compose
 
-## 实时开发
-代码变动时，不需要重新构建和启动容器，即可查看变动后的效果。请参考[微信云托管实时开发指南](https://developers.weixin.qq.com/miniprogram/dev/wxcloudrun/src/guide/debug/dev.html)
+## 项目结构
 
-## Dockerfile最佳实践
-请参考[如何提高项目构建效率](https://developers.weixin.qq.com/miniprogram/dev/wxcloudrun/src/scene/build/speed.html)
-
-## 目录结构说明
-~~~
+```text
 .
-├── Dockerfile                      Dockerfile 文件
-├── LICENSE                         LICENSE 文件
-├── README.md                       README 文件
-├── container.config.json           模板部署「服务设置」初始化配置（二开请忽略）
-├── mvnw                            mvnw 文件，处理mevan版本兼容问题
-├── mvnw.cmd                        mvnw.cmd 文件，处理mevan版本兼容问题
-├── pom.xml                         pom.xml文件
-├── settings.xml                    maven 配置文件
-├── springboot-cloudbaserun.iml     项目配置文件
-└── src                             源码目录
-    └── main                        源码主目录
-        ├── java                    业务逻辑目录
-        └── resources               资源文件目录
-~~~
-
-
-## 服务 API 文档
-
-### `GET /api/count`
-
-获取当前计数
-
-#### 请求参数
-
-无
-
-#### 响应结果
-
-- `code`：错误码
-- `data`：当前计数值
-
-##### 响应结果示例
-
-```json
-{
-  "code": 0,
-  "data": 42
-}
+├── docker-compose.yml
+├── pom.xml
+├── poi.sql
+├── spec/
+├── src/
+│   └── main/
+│       ├── java/com/tencent/wxcloudrun/
+│       │   ├── config/
+│       │   ├── controller/
+│       │   ├── model/
+│       │   ├── repository/
+│       │   ├── service/
+│       │   └── task/
+│       └── resources/
+│           ├── application.yml
+│           └── db.sql
+└── Dockerfile
 ```
 
-#### 调用示例
+## 核心能力
 
-```
-curl https://<云托管服务域名>/api/count
-```
+### 1. 主题乐园实时数据同步
 
+- 定时从第三方接口拉取 `/v1/entity/{entityId}/live`
+- 将园区实体信息写入 `theme_park_entity`
+- 将 `liveData` 明细写入 `theme_park_live`
+- 在内存中缓存最近一次拉取结果
+- 提供最新批次查询、单项目查询、排序查询、POI 融合查询
 
+### 2. POI 查询增强
 
-### `POST /api/count`
+- 查询 `theme_park_poi` 并拼接实时状态与等待时间
+- 返回字段 `iamge_url`
+- `iamge_url` 的值规则为：
+  `THEMEPARK_POI_IMAGE_URL_PREFIX + entity_id + ".png"`
 
-更新计数，自增或者清零
+### 3. 模板计数器接口
 
-#### 请求参数
+- 保留 `GET /api/count`
+- 保留 `POST /api/count`
 
-- `action`：`string` 类型，枚举值
-  - 等于 `"inc"` 时，表示计数加一
-  - 等于 `"clear"` 时，表示计数重置（清零）
+### 4. 数据库健康检查
 
-##### 请求参数示例
+- 提供 `GET /api/health/db`
 
-```
-{
-  "action": "inc"
-}
-```
+## 环境变量
 
-#### 响应结果
+应用配置位于 [application.yml](/Users/bytedance/WeChatProjects/ParkService/src/main/resources/application.yml:1)。
 
-- `code`：错误码
-- `data`：当前计数值
+### 数据库
 
-##### 响应结果示例
+- `MYSQL_ADDRESS`
+  默认值：`127.0.0.1:3306`
+- `MYSQL_DATABASE`
+  默认值：`park`
+- `MYSQL_USERNAME`
+  默认值：`young`
+- `MYSQL_PASSWORD`
+  默认值：`park123`
 
-```json
-{
-  "code": 0,
-  "data": 42
-}
-```
+### 主题乐园同步
 
-#### 调用示例
+- `THEMEPARK_POI_IMAGE_URL_PREFIX`
+  示例：`https://cdn.example.com/themepark/`
+  用于拼接 POI 返回中的 `iamge_url`
 
-```
-curl -X POST -H 'content-type: application/json' -d '{"action": "inc"}' https://<云托管服务域名>/api/count
-```
+`themepark.live.entity-ids` 和 `themepark.live.url-template` 当前写在配置文件中，默认值如下：
 
-## 本地使用 Docker 启动 MySQL
+- `url-template`: `https://api.themeparks.wiki/v1/entity/%s/live`
+- `entity-ids`: `6e1464ca-1e9b-49c3-8937-c5c6f6675057`
 
-项目根目录已提供 `docker-compose.yml`，可直接启动本地 MySQL 8：
+## 本地运行
+
+### 1. 启动 MySQL
 
 ```bash
 docker compose up -d mysql phpmyadmin
 ```
 
-启动后可通过浏览器访问 phpMyAdmin：`http://localhost:8081`
+启动后：
 
-默认配置如下：
-- 端口：`3306`
-- 数据库：`park`
-- 用户名：`young`
-- 密码：`park123`
-- root 密码：`root123456`
+- MySQL: `127.0.0.1:3306`
+- phpMyAdmin: `http://localhost:8081`
+- 数据库名: `park`
+- 普通用户: `young`
+- 普通用户密码: `park123`
+- root 密码: `root123456`
 
-首次启动时会自动执行 `src/main/resources/db.sql` 初始化表结构。
+初始化脚本：
 
-本地启动 Spring Boot 前，可先设置环境变量：
+- [db.sql](/Users/bytedance/WeChatProjects/ParkService/src/main/resources/db.sql:1)
+
+### 2. 配置环境变量
 
 ```bash
 export MYSQL_ADDRESS=127.0.0.1:3306
 export MYSQL_DATABASE=park
 export MYSQL_USERNAME=young
 export MYSQL_PASSWORD=park123
+export THEMEPARK_POI_IMAGE_URL_PREFIX=https://cdn.example.com/themepark/
 ```
 
-也可以参考项目中的 `.env.example`。
+### 3. 启动应用
 
-## 使用注意
-如果不是通过微信云托管控制台部署模板代码，而是自行复制/下载模板代码后，手动新建一个服务并部署，需要在「服务设置」中补全以下环境变量，才可正常使用，否则会引发无法连接数据库，进而导致部署失败。
-- MYSQL_ADDRESS
-- MYSQL_PASSWORD
-- MYSQL_USERNAME
-以上三个变量的值请按实际情况填写。如果使用云托管内MySQL，可以在控制台MySQL页面获取相关信息。
-
-
-## License
-
-[MIT](./LICENSE)
-
-
-## 主题乐园定时任务
-
-- 定时表达式：`@Scheduled(cron = "0 */5 9-22 * * ?", zone = "Asia/Shanghai")`
-- 执行时间：每天 09:00 到 22:59 之间，每 5 分钟执行一次
-- 执行内容：抓取 Shanghai Disney Resort 实时数据，写入 `theme_park_entity` 和 `theme_park_live` 两张表，并打印任务执行日志
-
-
-## 数据库健康检查
-
-启动服务后可访问：
+如果本机安装了 Maven：
 
 ```bash
-curl http://localhost/api/health/db
+mvn spring-boot:run
 ```
 
-返回说明：
-- `code = 0`：数据库连接正常
-- `code = -1`：数据库连接失败
-- `data` 中会返回当前使用的 MySQL 地址、数据库名、用户名以及错误信息
+如果你希望使用 Maven Wrapper，需要先补齐仓库中的 `.mvn/wrapper` 文件；当前仓库只有 `mvnw` 脚本，没有完整 wrapper 目录。
+
+默认服务端口：
+
+- `80`
+
+如果本地调试不想占用低位端口，建议通过额外配置覆盖 `server.port`。
+
+## 定时任务
+
+定时任务定义在 [ThemeParkLiveScheduler.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/task/ThemeParkLiveScheduler.java:1)。
+
+执行表达式：
+
+```java
+@Scheduled(cron = "0 */5 9-22 * * ?", zone = "Asia/Shanghai")
+```
+
+执行规则：
+
+- 时区：`Asia/Shanghai`
+- 每天 `09:00` 到 `22:59`
+- 每 `5` 分钟执行一次
+
+任务行为：
+
+1. 拉取最新主题乐园实时数据
+2. 写入 `theme_park_entity`
+3. 写入 `theme_park_live`
+4. 更新服务内存缓存
+5. 打印同步日志
+
+## API
+
+统一响应结构：
+
+```json
+{
+  "code": 0,
+  "errorMsg": "",
+  "data": {}
+}
+```
+
+失败时 `code = -1`。
+
+### 1. 获取最新主题乐园原始实时数据
+
+`GET /api/themepark/live`
+
+说明：
+
+- 优先返回内存中的最近结果
+- 如果缓存为空，会主动调用第三方接口拉取
+
+### 2. 查询最新批次中某个实体的等待信息
+
+`GET /api/park/live/{entityId}`
+
+示例：
+
+```bash
+curl http://localhost/api/park/live/attTronLightcyclePowerRun
+```
+
+### 3. 查询最新批次全部实时数据
+
+`GET /api/park/live/latest`
+
+返回内容包含：
+
+- `fetchedAt`
+- `count`
+- `items`
+- `groupedByDestinationOrPark`
+
+### 4. 查询最新批次等待时间排行
+
+`GET /api/park/live/latest/rank`
+
+说明：
+
+- 按 `standbyWaitTime` 倒序排序
+
+### 5. 查询 POI + 最新实时状态
+
+`GET /api/park/live/latest/poi`
+
+返回内容除了 `theme_park_poi` 基础字段外，还会带上实时字段：
+
+- `status`
+- `standbyWaitTime`
+- `singleRiderWaitTime`
+- `queue`
+- `liveLastUpdated`
+- `liveFetchedAt`
+- `iamge_url`
+
+`iamge_url` 示例：
+
+```json
+{
+  "entityId": "attTronLightcyclePowerRun",
+  "iamge_url": "https://cdn.example.com/themepark/attTronLightcyclePowerRun.png"
+}
+```
+
+### 6. 数据库健康检查
+
+`GET /api/health/db`
+
+成功时会返回：
+
+- `mysqlAddress`
+- `mysqlDatabase`
+- `mysqlUsername`
+- `connected`
+- `ping`
+
+失败时还会返回：
+
+- `errorType`
+- `errorMessage`
+
+### 7. 计数器接口
+
+获取计数：
+
+`GET /api/count`
+
+更新计数：
+
+`POST /api/count`
+
+请求体：
+
+```json
+{
+  "action": "inc"
+}
+```
+
+支持的 `action`：
+
+- `inc`
+- `clear`
+
+## 数据库表
+
+数据库初始化脚本见 [db.sql](/Users/bytedance/WeChatProjects/ParkService/src/main/resources/db.sql:1)。
+
+当前核心表：
+
+- `Counters`
+- `theme_park_entity`
+- `theme_park_live`
+- `theme_park_poi`
+
+### theme_park_entity
+
+存储乐园实体信息，如园区、景点等顶层实体快照。
+
+关键字段：
+
+- `entity_id`
+- `name`
+- `slug`
+- `entity_type`
+- `parent_id`
+- `destination_id`
+- `timezone`
+- `external_id`
+- `latitude`
+- `longitude`
+- `raw_location`
+- `raw_tags`
+- `fetched_at`
+
+### theme_park_live
+
+存储每次同步产生的实时状态与等待时间。
+
+关键字段：
+
+- `entity_id`
+- `entity_name`
+- `entity_type`
+- `status`
+- `park_id`
+- `standby_wait_time`
+- `single_rider_wait_time`
+- `raw_queue`
+- `live_last_updated`
+- `fetched_at`
+
+### theme_park_poi
+
+存储 POI 基础信息，用于和最新一批实时数据做融合查询。
+
+关键字段：
+
+- `entity_id`
+- `name`
+- `english_name`
+- `category`
+- `img_url`
+- `primary_location_key`
+- `latitude`
+- `longitude`
+- `location_name`
+- `guest_height`
+- `thrill_level`
+- `age_range`
+- `interest_tags`
+- `today_open_time`
+
+## 相关代码入口
+
+- 应用入口：[WxCloudRunApplication.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/WxCloudRunApplication.java:1)
+- 主题乐园接口：[ThemeParkLiveController.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/controller/ThemeParkLiveController.java:1)
+- 主题乐园服务：[ThemeParkLiveServiceImpl.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/service/impl/ThemeParkLiveServiceImpl.java:1)
+- 定时任务：[ThemeParkLiveScheduler.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/task/ThemeParkLiveScheduler.java:1)
+- 健康检查：[HealthController.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/controller/HealthController.java:1)
+- 计数器接口：[CounterController.java](/Users/bytedance/WeChatProjects/ParkService/src/main/java/com/tencent/wxcloudrun/controller/CounterController.java:1)
+
+## 说明
+
+- 项目里仍保留了模板生成的一些基础文件和计数器功能。
+- 当前 README 以实际代码行为为准，不再按原始模板文案描述。
+- `iamge_url` 字段名保持与当前接口返回一致；如果后续要修正拼写，建议前后端一起改约定。

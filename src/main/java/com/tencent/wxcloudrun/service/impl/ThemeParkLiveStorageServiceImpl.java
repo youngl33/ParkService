@@ -14,6 +14,7 @@ import org.springframework.util.CollectionUtils;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +23,7 @@ import java.util.Map;
 public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageService {
 
   private static final Logger logger = LoggerFactory.getLogger(ThemeParkLiveStorageServiceImpl.class);
+  private static final DateTimeFormatter YYMMDDHH_FORMATTER = DateTimeFormatter.ofPattern("yyMMddHH");
 
   private final ThemeParkLiveRepository themeParkLiveRepository;
   private final ObjectMapper objectMapper;
@@ -53,6 +55,7 @@ public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageServ
       live.setRawQueue(toJson(item.getQueue()));
       live.setLiveLastUpdated(parseUtcTime(item.getLastUpdated()));
       live.setFetchedAt(fetchedAt);
+      live.setYymmddhh(fetchedAt.format(YYMMDDHH_FORMATTER));
       liveRecords.add(live);
     }
 

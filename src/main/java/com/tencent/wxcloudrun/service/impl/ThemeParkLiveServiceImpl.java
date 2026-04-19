@@ -38,6 +38,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   private final RestTemplate restTemplate;
   private final String liveApiUrlTemplate;
   private final List<String> entityIds;
+  private final String poiImageUrlPrefix;
   private final ThemeParkLiveStorageService themeParkLiveStorageService;
   private final ThemeParkEntityStorageService themeParkEntityStorageService;
   private final ThemeParkPoiRepository themeParkPoiRepository;
@@ -53,7 +54,8 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       ThemeParkLiveRepository themeParkLiveRepository,
       ObjectMapper objectMapper,
       @Value("${themepark.live.url-template:https://api.themeparks.wiki/v1/entity/%s/live}") String liveApiUrlTemplate,
-      @Value("${themepark.live.entity-ids:6e1464ca-1e9b-49c3-8937-c5c6f6675057}") List<String> entityIds) {
+      @Value("${themepark.live.entity-ids:6e1464ca-1e9b-49c3-8937-c5c6f6675057}") List<String> entityIds,
+      @Value("${themepark.poi.image-url-prefix:}") String poiImageUrlPrefix) {
     this.restTemplate = restTemplateBuilder
         .setConnectTimeout(Duration.ofSeconds(10))
         .setReadTimeout(Duration.ofSeconds(10))
@@ -65,6 +67,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
     this.objectMapper = objectMapper;
     this.liveApiUrlTemplate = liveApiUrlTemplate;
     this.entityIds = entityIds == null || entityIds.isEmpty() ? Collections.singletonList(DEFAULT_ENTITY_ID) : entityIds;
+    this.poiImageUrlPrefix = normalizeImageUrlPrefix(poiImageUrlPrefix);
   }
 
   @Override
@@ -165,6 +168,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
     for (ThemeParkLive live : lives) {
       Map<String, Object> item = new LinkedHashMap<>();
       item.put("fetchedAt", live.getFetchedAt());
+      item.put("yymmddhh", live.getYymmddhh());
       item.put("id", live.getEntityId());
       item.put("name", live.getEntityName());
       item.put("entityType", live.getEntityType());
@@ -202,6 +206,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       item.put("name", poi.getName());
       item.put("englishName", poi.getEnglishName());
       item.put("category", poi.getCategory());
+      item.put("iamge_url", buildPoiImageUrl(poi.getEntityId()));
       item.put("imgUrl", poi.getImgUrl());
       item.put("primaryLocationKey", poi.getPrimaryLocationKey());
       item.put("latitude", poi.getLatitude());
@@ -220,6 +225,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       item.put("status", live == null ? null : live.getStatus());
       item.put("standbyWaitTime", live == null ? null : live.getStandbyWaitTime());
       item.put("singleRiderWaitTime", live == null ? null : live.getSingleRiderWaitTime());
+      item.put("yymmddhh", live == null ? null : live.getYymmddhh());
       item.put("queue", live == null ? Collections.emptyMap() : readQueue(live.getRawQueue()));
       item.put("liveLastUpdated", live == null ? null : live.getLiveLastUpdated());
       item.put("liveFetchedAt", latestFetchedAt);
@@ -239,6 +245,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   private Map<String, Object> toLiveMap(ThemeParkLive live) {
     Map<String, Object> result = new LinkedHashMap<>();
     result.put("fetchedAt", live.getFetchedAt());
+    result.put("yymmddhh", live.getYymmddhh());
     result.put("id", live.getEntityId());
     result.put("name", live.getEntityName());
     result.put("entityType", live.getEntityType());
@@ -264,5 +271,20 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       logger.warn("Failed to parse raw queue json for latest batch query. rawQueue={}", rawQueue, exception);
       return Collections.emptyMap();
     }
+  }
+
+  private String buildPoiImageUrl(String entityId) {
+    if (entityId == null || entityId.trim().isEmpty() || poiImageUrlPrefix.isEmpty()) {
+      return null;
+    }
+    return poiImageUrlPrefix + entityId + ".png";
+  }
+
+  private String normalizeImageUrlPrefix(String imageUrlPrefix) {
+    if (imageUrlPrefix == null || imageUrlPrefix.trim().isEmpty()) {
+      return "";
+    }
+    String normalized = imageUrlPrefix.trim();
+    return normalized.endsWith("/") ? normalized : normalized + "/";
   }
 }
