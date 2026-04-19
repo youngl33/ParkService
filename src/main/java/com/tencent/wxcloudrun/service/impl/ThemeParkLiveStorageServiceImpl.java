@@ -23,7 +23,7 @@ import java.util.Map;
 public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageService {
 
   private static final Logger logger = LoggerFactory.getLogger(ThemeParkLiveStorageServiceImpl.class);
-  private static final DateTimeFormatter YYMMDDHH_FORMATTER = DateTimeFormatter.ofPattern("yyMMddHH");
+  private static final DateTimeFormatter YYYYMMDDHH_FORMATTER = DateTimeFormatter.ofPattern("yyyyMMddHH");
 
   private final ThemeParkLiveRepository themeParkLiveRepository;
   private final ObjectMapper objectMapper;
@@ -40,9 +40,11 @@ public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageServ
       return;
     }
 
+    Long fetchedTimeKey = Long.valueOf(fetchedAt.format(YYYYMMDDHH_FORMATTER));
+
     List<ThemeParkLive> liveRecords = new ArrayList<>();
     for (ThemeParkLiveResponse.LiveDataItem item : response.getLiveData()) {
-      ThemeParkLive live = new ThemeParkLive();
+      ThemeParkLive live = loadExistingLive(item.getId(), fetchedTimeKey);
       live.setEntityId(item.getId());
       live.setEntityName(item.getName());
       live.setEntityType(item.getEntityType());
@@ -55,7 +57,7 @@ public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageServ
       live.setRawQueue(toJson(item.getQueue()));
       live.setLiveLastUpdated(parseUtcTime(item.getLastUpdated()));
       live.setFetchedAt(fetchedAt);
-      live.setYymmddhh(fetchedAt.format(YYMMDDHH_FORMATTER));
+      live.setFetchedTimeKey(fetchedTimeKey);
       liveRecords.add(live);
     }
 
@@ -91,5 +93,13 @@ public class ThemeParkLiveStorageServiceImpl implements ThemeParkLiveStorageServ
       return null;
     }
     return LocalDateTime.ofInstant(Instant.parse(value), ZoneId.of("UTC"));
+  }
+
+  private ThemeParkLive loadExistingLive(String entityId, Long fetchedTimeKey) {
+    if (entityId == null || entityId.trim().isEmpty()) {
+      return new ThemeParkLive();
+    }
+    return themeParkLiveRepository.findFirstByEntityIdAndFetchedTimeKey(entityId, fetchedTimeKey)
+        .orElseGet(ThemeParkLive::new);
   }
 }

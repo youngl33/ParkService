@@ -10,6 +10,8 @@ import com.tencent.wxcloudrun.repository.ThemeParkPoiSummaryProjection;
 import com.tencent.wxcloudrun.service.ThemeParkEntityStorageService;
 import com.tencent.wxcloudrun.service.ThemeParkLiveService;
 import com.tencent.wxcloudrun.service.ThemeParkLiveStorageService;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,6 +36,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
 
   private static final Logger logger = LoggerFactory.getLogger(ThemeParkLiveServiceImpl.class);
   private static final String DEFAULT_ENTITY_ID = "6e1464ca-1e9b-49c3-8937-c5c6f6675057";
+  private static final String LATEST_POI_CACHE = "latestPoiWithWaitTimes";
 
   private final RestTemplate restTemplate;
   private final String liveApiUrlTemplate;
@@ -71,6 +74,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   }
 
   @Override
+  @CacheEvict(value = LATEST_POI_CACHE, allEntries = true)
   public List<ThemeParkLiveResponse> fetchLiveData() {
     return fetchAllLiveData();
   }
@@ -168,7 +172,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
     for (ThemeParkLive live : lives) {
       Map<String, Object> item = new LinkedHashMap<>();
       item.put("fetchedAt", live.getFetchedAt());
-      item.put("yymmddhh", live.getYymmddhh());
+      item.put("fetchedTimeKey", live.getFetchedTimeKey());
       item.put("id", live.getEntityId());
       item.put("name", live.getEntityName());
       item.put("entityType", live.getEntityType());
@@ -187,12 +191,14 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   }
 
   @Override
-  public List<Map<String, Object>> getLatestPoiWithWaitTimes() {
+  @Cacheable(value = LATEST_POI_CACHE, key = "#entityId == null || #entityId.trim().isEmpty() ? 'ALL' : #entityId.trim()")
+  public List<Map<String, Object>> getLatestPoiWithWaitTimes(String entityId) {
     LocalDateTime latestFetchedAt = getRequiredLatestFetchedAt();
     List<ThemeParkPoiSummaryProjection> pois = themeParkPoiRepository.findAllSummariesByOrderByIdAsc();
     if (pois.isEmpty()) {
       return Collections.emptyList();
     }
+    String normalizedEntityId = normalizeEntityId(entityId);
 
     List<ThemeParkLive> lives = themeParkLiveRepository.findAllByFetchedAt(latestFetchedAt);
     Map<String, ThemeParkLive> latestLiveByEntityId = lives.stream()
@@ -200,6 +206,9 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
 
     List<Map<String, Object>> result = new ArrayList<>();
     for (ThemeParkPoiSummaryProjection poi : pois) {
+      if (normalizedEntityId != null && !normalizedEntityId.equals(poi.getEntityId())) {
+        continue;
+      }
       Map<String, Object> item = new LinkedHashMap<>();
       item.put("id", poi.getId());
       item.put("entityId", poi.getEntityId());
@@ -225,7 +234,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       item.put("status", live == null ? null : live.getStatus());
       item.put("standbyWaitTime", live == null ? null : live.getStandbyWaitTime());
       item.put("singleRiderWaitTime", live == null ? null : live.getSingleRiderWaitTime());
-      item.put("yymmddhh", live == null ? null : live.getYymmddhh());
+      item.put("fetchedTimeKey", live == null ? null : live.getFetchedTimeKey());
       item.put("queue", live == null ? Collections.emptyMap() : readQueue(live.getRawQueue()));
       item.put("liveLastUpdated", live == null ? null : live.getLiveLastUpdated());
       item.put("liveFetchedAt", latestFetchedAt);
@@ -245,7 +254,7 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   private Map<String, Object> toLiveMap(ThemeParkLive live) {
     Map<String, Object> result = new LinkedHashMap<>();
     result.put("fetchedAt", live.getFetchedAt());
-    result.put("yymmddhh", live.getYymmddhh());
+    result.put("fetchedTimeKey", live.getFetchedTimeKey());
     result.put("id", live.getEntityId());
     result.put("name", live.getEntityName());
     result.put("entityType", live.getEntityType());
@@ -286,5 +295,12 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
     }
     String normalized = imageUrlPrefix.trim();
     return normalized.endsWith("/") ? normalized : normalized + "/";
+  }
+
+  private String normalizeEntityId(String entityId) {
+    if (entityId == null || entityId.trim().isEmpty()) {
+      return null;
+    }
+    return entityId.trim();
   }
 }

@@ -20,13 +20,14 @@ CREATE TABLE IF NOT EXISTS `theme_park_live` (
                                                  `raw_queue` text,
                                                  `live_last_updated` datetime DEFAULT NULL,
                                                  `fetched_at` datetime NOT NULL,
-                                                 `yymmddhh` varchar(8) DEFAULT NULL,
+                                                 `fetched_time_key` bigint(20) DEFAULT NULL,
                                                  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
                                                  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                                                  PRIMARY KEY (`id`),
+                                                 UNIQUE KEY `uk_live_entity_id_fetched_time_key` (`entity_id`, `fetched_time_key`),
                                                  KEY `idx_entity_id` (`entity_id`),
                                                  KEY `idx_status` (`status`),
-                                                 KEY `idx_live_yymmddhh` (`yymmddhh`),
+                                                 KEY `idx_live_fetched_time_key` (`fetched_time_key`),
                                                  KEY `idx_fetched_at` (`fetched_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

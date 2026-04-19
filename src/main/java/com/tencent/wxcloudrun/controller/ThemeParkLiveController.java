@@ -4,6 +4,7 @@ import com.tencent.wxcloudrun.config.ApiResponse;
 import com.tencent.wxcloudrun.service.ThemeParkLiveService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -48,9 +49,9 @@ public class ThemeParkLiveController {
   }
 
   @GetMapping("/api/park/live/latest/poi")
-  public ApiResponse getLatestPoiWaitTimes() {
+  public ApiResponse getLatestPoiWaitTimes(@RequestParam(required = false) String entityId) {
     try {
-      return ApiResponse.ok(themeParkLiveService.getLatestPoiWithWaitTimes());
+      return ApiResponse.ok(themeParkLiveService.getLatestPoiWithWaitTimes(entityId));
     } catch (IllegalArgumentException exception) {
       return ApiResponse.error(exception.getMessage());
     }

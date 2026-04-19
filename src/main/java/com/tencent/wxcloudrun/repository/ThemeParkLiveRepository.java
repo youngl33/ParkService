@@ -16,4 +16,6 @@ public interface ThemeParkLiveRepository extends JpaRepository<ThemeParkLive, Lo
   Optional<ThemeParkLive> findFirstByEntityIdAndFetchedAtOrderByIdDesc(String entityId, LocalDateTime fetchedAt);
 
   List<ThemeParkLive> findAllByFetchedAt(LocalDateTime fetchedAt);
+
+  Optional<ThemeParkLive> findFirstByEntityIdAndFetchedTimeKey(String entityId, Long fetchedTimeKey);
 }
