@@ -191,14 +191,14 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
   }
 
   @Override
-  @Cacheable(value = LATEST_POI_CACHE, key = "#entityId == null || #entityId.trim().isEmpty() ? 'ALL' : #entityId.trim()")
-  public List<Map<String, Object>> getLatestPoiWithWaitTimes(String entityId) {
+  @Cacheable(value = LATEST_POI_CACHE, key = "#parkId == null || #parkId.trim().isEmpty() ? 'ALL' : #parkId.trim()")
+  public List<Map<String, Object>> getLatestPoiWithWaitTimes(String parkId) {
     LocalDateTime latestFetchedAt = getRequiredLatestFetchedAt();
     List<ThemeParkPoiSummaryProjection> pois = themeParkPoiRepository.findAllSummariesByOrderByIdAsc();
     if (pois.isEmpty()) {
       return Collections.emptyList();
     }
-    String normalizedEntityId = normalizeEntityId(entityId);
+    String normalizedParkId = normalizeParkId(parkId);
 
     List<ThemeParkLive> lives = themeParkLiveRepository.findAllByFetchedAt(latestFetchedAt);
     Map<String, ThemeParkLive> latestLiveByEntityId = lives.stream()
@@ -206,9 +206,6 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
 
     List<Map<String, Object>> result = new ArrayList<>();
     for (ThemeParkPoiSummaryProjection poi : pois) {
-      if (normalizedEntityId != null && !normalizedEntityId.equals(poi.getEntityId())) {
-        continue;
-      }
       Map<String, Object> item = new LinkedHashMap<>();
       item.put("id", poi.getId());
       item.put("entityId", poi.getEntityId());
@@ -231,6 +228,9 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
       item.put("updatedAt", poi.getUpdatedAt());
 
       ThemeParkLive live = latestLiveByEntityId.get(poi.getEntityId());
+      if (normalizedParkId != null && (live == null || !normalizedParkId.equals(live.getParkId()))) {
+        continue;
+      }
       item.put("status", live == null ? null : live.getStatus());
       item.put("standbyWaitTime", live == null ? null : live.getStandbyWaitTime());
       item.put("singleRiderWaitTime", live == null ? null : live.getSingleRiderWaitTime());
@@ -297,10 +297,10 @@ public class ThemeParkLiveServiceImpl implements ThemeParkLiveService {
     return normalized.endsWith("/") ? normalized : normalized + "/";
   }
 
-  private String normalizeEntityId(String entityId) {
-    if (entityId == null || entityId.trim().isEmpty()) {
+  private String normalizeParkId(String parkId) {
+    if (parkId == null || parkId.trim().isEmpty()) {
       return null;
     }
-    return entityId.trim();
+    return parkId.trim();
   }
 }

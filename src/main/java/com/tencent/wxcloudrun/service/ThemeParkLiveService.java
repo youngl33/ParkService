@@ -19,5 +19,5 @@ public interface ThemeParkLiveService {
 
   List<Map<String, Object>> getLatestBatchRankings();
 
-  List<Map<String, Object>> getLatestPoiWithWaitTimes(String entityId);
+  List<Map<String, Object>> getLatestPoiWithWaitTimes(String parkId);
 }

@@ -49,9 +49,9 @@ public class ThemeParkLiveController {
   }
 
   @GetMapping("/api/park/live/latest/poi")
-  public ApiResponse getLatestPoiWaitTimes(@RequestParam(required = false) String entityId) {
+  public ApiResponse getLatestPoiWaitTimes(@RequestParam(required = false) String parkId) {
     try {
-      return ApiResponse.ok(themeParkLiveService.getLatestPoiWithWaitTimes(entityId));
+      return ApiResponse.ok(themeParkLiveService.getLatestPoiWithWaitTimes(parkId));
     } catch (IllegalArgumentException exception) {
       return ApiResponse.error(exception.getMessage());
     }
